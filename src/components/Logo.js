@@ -9,7 +9,7 @@ import "../styles/css/logo.css";
 function Logo() {
   return (
     <div className="logo">
-      <a href="/">
+      <a href="/ELSA-form">
         <img className="logo__img" src={logoImage} alt="" />
         <div className="logo__container">
           <img src={E} alt="" />
