@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { FaMailchimp, FaPhone, FaUser } from "react-icons/fa";
+import { FaMailchimp, FaPhone } from "react-icons/fa";
 import "../../styles/css/form.css";
 
 function Form() {
@@ -150,7 +150,7 @@ function Form() {
       <div className="form__body">
         <div className="form__user">
           <label htmlFor="form__userInput" className="form__label">
-            <FaUser className="form__icon"></FaUser>
+            <i className="fa-regular fa-user"></i>
             <span>Họ tên *</span>
           </label>
           <input
@@ -167,7 +167,7 @@ function Form() {
 
         <div className="form__number">
           <label htmlFor="form__phoneInput" className="form__label">
-            <FaPhone className="form__icon"></FaPhone>
+            <i className="fa-solid fa-phone"></i>
             <span>Số điện thoại *</span>
           </label>
           <input
@@ -186,7 +186,7 @@ function Form() {
 
         <div className="form__email">
           <label htmlFor="form__emailInput" className="form__label">
-            <FaMailchimp className="form__icon"></FaMailchimp>
+            <i className="fa-regular fa-envelope"></i>
             <span>Email *</span>
           </label>
           <input
