@@ -48,86 +48,95 @@ function Form() {
   // validate input function
   const handleUserInputBlur = () => {
     if (name == "") {
-      const userError = document.querySelector(".form__userError--empty");
-      userError.classList.add("input__errorShow");
+      document
+        .querySelector(".form__userError--empty")
+        .classList.add("input__errorShow");
+
+      document.querySelector("#form__userInput").classList.add("inputError");
+
       setCheckName(false);
-      const input = document.querySelector("#form__userInput");
-      input.classList.add("inputError");
     } else setCheckName(true);
   };
 
   const handleUserInputFocus = () => {
-    const userError = document.querySelector(".form__userError--empty");
-    userError.classList.remove("input__errorShow");
-    const input = document.querySelector("#form__userInput");
-    input.classList.remove("inputError");
+    document
+      .querySelector(".form__userError--empty")
+      .classList.remove("input__errorShow");
+
+    document.querySelector("#form__userInput").classList.remove("inputError");
   };
 
   const handlePhoneInputBlur = () => {
     if (phone == "") {
-      const phoneErrorEmpty = document.querySelector(
-        ".form__phoneError--empty"
-      );
-      phoneErrorEmpty.classList.add("input__errorShow");
+      document
+        .querySelector(".form__phoneError--empty")
+        .classList.add("input__errorShow");
+
+      document.querySelector("#form__phoneInput").classList.add("inputError");
+
       setCheckPhone(false);
-      const input = document.querySelector("#form__phoneInput");
-      input.classList.add("inputError");
     } else if (phone.length !== 10 || phone[0] !== "0" || !validatePhone) {
-      const phoneErrorWrong = document.querySelector(
-        ".form__phoneError--wrong"
-      );
-      phoneErrorWrong.classList.add("input__errorShow");
+      document
+        .querySelector(".form__phoneError--wrong")
+        .classList.add("input__errorShow");
+
+      document.querySelector("#form__phoneInput").classList.add("inputError");
+
       setCheckPhone(false);
-      const input = document.querySelector("#form__phoneInput");
-      input.classList.add("inputError");
     } else setCheckPhone(true);
   };
 
   const handlePhoneInputFocus = () => {
-    const phoneErrorEmpty = document.querySelector(".form__phoneError--empty");
-    phoneErrorEmpty.classList.remove("input__errorShow");
-    const phoneErrorWrong = document.querySelector(".form__phoneError--wrong");
-    phoneErrorWrong.classList.remove("input__errorShow");
-    const input = document.querySelector("#form__phoneInput");
-    input.classList.remove("inputError");
+    document
+      .querySelector(".form__phoneError--empty")
+      .classList.remove("input__errorShow");
+
+    document
+      .querySelector(".form__phoneError--wrong")
+      .classList.remove("input__errorShow");
+
+    document.querySelector("#form__phoneInput").classList.remove("inputError");
   };
 
   const handleEmailInputBlur = () => {
     if (email == "") {
-      const emailErrorEmpty = document.querySelector(
-        ".form__emailError--empty"
-      );
-      emailErrorEmpty.classList.add("input__errorShow");
+      document
+        .querySelector(".form__emailError--empty")
+        .classList.add("input__errorShow");
+
+      document.querySelector("#form__emailInput").classList.add("inputError");
+
       setCheckEmail(false);
-      const input = document.querySelector("#form__emailInput");
-      input.classList.add("inputError");
     } else if (
       email.search("@gmail.com") === -1 ||
       email.search("@gmail.com") === 0
     ) {
-      const emailErrorWrong = document.querySelector(
-        ".form__emailError--wrong"
-      );
-      emailErrorWrong.classList.add("input__errorShow");
+      document
+        .querySelector(".form__emailError--wrong")
+        .classList.add("input__errorShow");
+
+      document.querySelector("#form__emailInput").classList.add("inputError");
+
       setCheckEmail(false);
-      const input = document.querySelector("#form__emailInput");
-      input.classList.add("inputError");
     } else setCheckEmail(true);
   };
 
   const handleEmailInputFocus = () => {
-    const emailErrorEmpty = document.querySelector(".form__emailError--empty");
-    emailErrorEmpty.classList.remove("input__errorShow");
-    const emailErrorWrong = document.querySelector(".form__emailError--wrong");
-    emailErrorWrong.classList.remove("input__errorShow");
-    const input = document.querySelector("#form__emailInput");
-    input.classList.remove("inputError");
+    document
+      .querySelector(".form__emailError--empty")
+      .classList.remove("input__errorShow");
+
+    document
+      .querySelector(".form__emailError--wrong")
+      .classList.remove("input__errorShow");
+
+    document.querySelector("#form__emailInput").classList.remove("inputError");
   };
 
   const handleSubmitBtnClick = (e) => {
     e.preventDefault();
-    const modalContainer = document.querySelector(".modal__wrapper");
-    modalContainer.classList.add("show");
+    document.querySelector(".modal__wrapper").classList.add("show");
+
     const modal = document.querySelector(".modal");
     if (checkName && checkPhone && checkEmail && check !== -1)
       modal.classList.add("success");
