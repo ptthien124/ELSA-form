@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from "react";
-import { FaMailchimp, FaPhone } from "react-icons/fa";
 import "../../styles/css/form.css";
 
 function Form() {
