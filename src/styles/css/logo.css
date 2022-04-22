@@ -10,6 +10,14 @@
   box-shadow: 0px 4px 20px rgba(12, 36, 64, 0.1);
 }
 
+.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 200px;
+}
+
 .logo__img {
   height: 62px;
   object-fit: contain;
