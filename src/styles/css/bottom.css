@@ -8,14 +8,16 @@
 }
 
 .bottom img {
-  height: 1460px;
+  /* height: 1460px; */
+  width: 1440px;
+  object-fit: contain;
   margin-top: -4px;
 }
 
 .bottom__container {
   position: absolute;
-  top: 1130px;
-  height: 108px;
+  top: 975px;
+  height: 88px;
   left: 0;
   right: 0;
   display: flex;
@@ -35,13 +37,13 @@
   border-radius: 100px;
   border: none;
 
-  padding: 20px 90px 20px;
-  min-width: 566px;
+  padding: 20px 0;
+  min-width: 480px;
 
   cursor: pointer;
   transition: all 0.1s ease;
 
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
