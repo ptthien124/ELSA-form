@@ -15,7 +15,8 @@ function FormContainer() {
         <img className="form__backgroundPhone" src={Phone} alt="" />
         <div className="background__circle small"></div>
         <div className="background__circle big"></div>
-        <div className="background__square"></div>
+        <div className="background__square pink"></div>
+        <div className="background__square yellow"></div>
       </div>
     </div>
   );

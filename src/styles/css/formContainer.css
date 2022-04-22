@@ -65,13 +65,22 @@
 
 .background__square {
   position: absolute;
-  background-color: #fe6b8e;
   transform: rotateZ(45deg);
 
   border-radius: 25%;
 
   width: 80px;
   height: 80px;
+}
 
+.background__square.pink {
   right: 52px;
+  background-color: #fe6b8e;
+}
+
+.background__square.yellow {
+  background: linear-gradient(132.48deg, #fff35c -9.74%, #ff795b 115.77%);
+  top: 246px;
+  right: 250px;
+  z-index: -2;
 }
