@@ -143,7 +143,8 @@ function Form() {
   return (
     <form className="form">
       <div className="form__header">
-        <p>CÙNG ỨNG DỤNG ELSA NÓI TIẾNG ANH “THẢ GA”</p>
+        <span>CÙNG ỨNG DỤNG ELSA</span>
+        <span>NÓI TIẾNG ANH “THẢ GA”</span>
       </div>
 
       <div className="form__body">
