@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ELSA-form/static/css/main.6d14f152.css",
+    "main.js": "/ELSA-form/static/js/main.03cc7010.js",
+    "static/js/787.08f3a00a.chunk.js": "/ELSA-form/static/js/787.08f3a00a.chunk.js",
+    "static/media/phones.png": "/ELSA-form/static/media/phones.5e3c50e4e37514cf4789.png",
+    "static/media/phone.png": "/ELSA-form/static/media/phone.e5ff409060b3f2bcdcb8.png",
+    "static/media/flower.png": "/ELSA-form/static/media/flower.791168ad26003501ca13.png",
+    "static/media/logo.png": "/ELSA-form/static/media/logo.0b04212c99bb9097db9b.png",
+    "index.html": "/ELSA-form/index.html",
+    "main.6d14f152.css.map": "/ELSA-form/static/css/main.6d14f152.css.map",
+    "main.03cc7010.js.map": "/ELSA-form/static/js/main.03cc7010.js.map",
+    "787.08f3a00a.chunk.js.map": "/ELSA-form/static/js/787.08f3a00a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d14f152.css",
+    "static/js/main.03cc7010.js"
+  ]
+}
