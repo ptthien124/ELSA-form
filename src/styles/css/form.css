@@ -1,0 +1,250 @@
+.form {
+  min-width: 600px;
+  width: 600px;
+  min-height: 702px;
+  height: 823px;
+  padding-bottom: 32px;
+  margin: auto;
+
+  border-radius: 20px;
+
+  color: white;
+
+  position: relative;
+  z-index: 1;
+}
+
+.form__header {
+  height: 130px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+
+  padding: 8px 110px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
+
+  background: linear-gradient(81.84deg, #49dce1 1.09%, #39a3fb 96.86%);
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  z-index: 1000;
+}
+
+.form__header > p {
+  line-height: 5rem;
+}
+
+.form__body {
+  color: #06bae8;
+  font-size: 2.5rem;
+  background-color: white;
+
+  padding: 16px 32px 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form__user,
+.form__number,
+.form__email {
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px 0 0;
+}
+
+.form__user > label,
+.form__number > label,
+.form__email > label {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.form__user > label > span,
+.form__number > label > span,
+.form__email > label > span {
+  margin-left: 23px;
+}
+
+.form__user > input,
+.form__number > input,
+.form__email > input {
+  border: 2px solid #06bae8;
+  height: 60px;
+  padding: 0 10px;
+
+  font-size: 2rem;
+}
+
+.form__user > input:focus,
+.form__number > input:focus,
+.form__email > input:focus {
+  outline: 1px solid #06bae8;
+}
+
+.form__select {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  margin: 24px 0 32px;
+
+  color: #333;
+}
+
+.form__select > div {
+  display: flex;
+  align-items: center;
+}
+
+.form__select label {
+  cursor: pointer;
+  height: 100%;
+
+  line-height: 4rem;
+  padding-left: 10px;
+}
+
+.form__select input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  height: 40px;
+  width: 40px;
+  background-color: white;
+
+  border: 2px solid #57b3ff;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.form__select input:checked::after {
+  display: flex;
+}
+
+.form__select input::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 2.4rem;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  color: #57b3ff;
+}
+
+.form__price {
+  width: 100%;
+  text-align: center;
+
+  margin: -20px 0 30px;
+}
+
+.form__submitBtn {
+  height: 74px;
+  width: 100%;
+  background: linear-gradient(45deg, #3dffc8, #40f6cf, #49dce1, #57b3ff);
+  padding-top: 2px;
+  box-shadow: 0px 2px 6px rgba(46, 153, 241, 0.5);
+
+  border: none;
+  border-radius: 20px;
+
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.form__submitBtn:hover {
+  filter: brightness(105%);
+  box-shadow: 0px 2px 10px rgba(46, 153, 241, 0.5);
+}
+
+.form__submitBtn:active {
+  filter: brightness(95%);
+  box-shadow: 0px 2px 2px rgba(46, 153, 241, 0.5);
+}
+
+.form__userError--empty,
+.form__phoneError--empty,
+.form__phoneError--wrong,
+.form__emailError--empty,
+.form__emailError--wrong {
+  color: #f16b16;
+  font-size: 2rem;
+  font-weight: 600;
+  display: none;
+  width: 100%;
+  text-align: right;
+}
+
+.form__emailError--wrong span {
+  font-style: italic;
+}
+
+.input__errorShow {
+  display: block;
+  animation: showErr 0.4s ease-out;
+}
+
+.inputError {
+  border: 2px solid #f16b16 !important;
+}
+
+@keyframes showErr {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-2px);
+  }
+  20% {
+    transform: translateX(2px);
+  }
+  30% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  60% {
+    transform: translateX(2px);
+  }
+  70% {
+    transform: translateX(-2px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  90% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

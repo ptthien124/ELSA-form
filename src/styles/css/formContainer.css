@@ -1,0 +1,77 @@
+.form__container {
+  background-color: #0c2440;
+  min-height: 1080px;
+  width: 100%;
+  min-width: 1208px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.form__wrapper {
+  flex: 1;
+}
+
+.form__background {
+  width: 580px;
+  z-index: 0;
+}
+
+.form__backgroundFlower {
+  position: absolute;
+  right: 0;
+  top: 34px;
+  width: 969px;
+  z-index: -1;
+}
+
+.form__backgroundPhone {
+  position: absolute;
+  right: 0;
+  top: 184px;
+
+  height: 708px;
+  z-index: -1;
+}
+
+.background__circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.background__circle.small {
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(170.52deg, #57ffe1 -2.61%, #439ff3 146.19%);
+
+  top: 638px;
+  right: 600px;
+}
+
+.background__circle.big {
+  height: 156px;
+  width: 156px;
+  background: linear-gradient(32.47deg, #31bfff 2.02%, #1cf1dc 114.74%);
+
+  z-index: -10;
+  top: 688px;
+  right: 452px;
+}
+
+.background__square {
+  position: absolute;
+  background-color: #fe6b8e;
+  transform: rotateZ(45deg);
+
+  border-radius: 25%;
+
+  width: 80px;
+  height: 80px;
+
+  right: 52px;
+}

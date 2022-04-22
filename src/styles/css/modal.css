@@ -1,0 +1,144 @@
+.modal__wrapper {
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  display: none;
+  z-index: 1000;
+}
+
+.modal__wrapper.show {
+  display: flex;
+}
+
+.modal {
+  width: 500px;
+  background-color: white;
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  animation: dropDown 0.3s ease-out;
+}
+
+.modal__header {
+  font-size: 2.6rem;
+  font-weight: bold;
+
+  padding: 20px 50px;
+  text-align: center;
+
+  color: white;
+}
+
+.modal__body {
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 500;
+
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.modal__footer {
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+}
+
+.modal__btn {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 3rem;
+
+  cursor: pointer;
+}
+
+.modal__headerSuccess {
+  display: none;
+}
+
+.success .modal__header {
+  background-color: #1dbfaf;
+}
+
+.success .modal__headerSuccess {
+  display: block;
+}
+
+.success .modal__btn {
+  background-color: #34a89d;
+}
+
+.success__container {
+  display: none;
+}
+
+.success .success__container {
+  display: block;
+}
+
+.error {
+  display: block;
+}
+
+.modal__headerError {
+  display: none;
+}
+
+.error .modal__header {
+  background-color: #e26e70;
+}
+
+.error .modal__headerError {
+  display: block;
+}
+
+.error .modal__btn {
+  background-color: #e26e70;
+}
+
+.error__container {
+  display: none;
+}
+
+.error .error__container {
+  display: block;
+}
+
+.errorName,
+.errorPhone,
+.errorEmail,
+.errorSelect {
+  display: none;
+}
+
+.name .errorName,
+.phone .errorPhone,
+.email .errorEmail,
+.select .errorSelect {
+  display: block;
+}
+
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
