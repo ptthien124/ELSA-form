@@ -2,7 +2,6 @@
   background-color: #0c2440;
   min-height: 1080px;
   width: 100%;
-  min-width: 1208px;
 
   display: flex;
   align-items: center;
@@ -83,4 +82,10 @@
   top: 246px;
   right: 250px;
   z-index: -2;
+}
+
+@media(max-width: 1200px){
+  .form__background{
+    display: none;
+  }
 }

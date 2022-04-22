@@ -17,10 +17,9 @@ function Top() {
           <span>APP LUYỆN NÓI</span>
           <span>GIAO TIẾP TIẾNG ANH THỜI 4.0</span>
           <h3>Với ELSA Speak - Ai Cũng Có Thể Nói Tiếng Anh Hay!</h3>
-          <button onClick={handleBtnClick}>
-            Đăng ký ngay
-          </button>
+          <button onClick={handleBtnClick}>Đăng ký ngay</button>
         </div>
+        <div className="square2"></div>
       </div>
       <img src={phone} alt="" />
     </div>

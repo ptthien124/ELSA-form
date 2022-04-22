@@ -15,7 +15,6 @@
 
 .top__container {
   width: 100%;
-  min-width: 600px;
 }
 
 .square {
@@ -31,6 +30,23 @@
   left: -38px;
 
   z-index: -1;
+}
+
+.square2 {
+  display: none;
+  background: linear-gradient(
+    152.47deg,
+    rgba(255, 243, 92, 0.3) 6.57%,
+    rgba(255, 121, 91, 0.3) 117.47%
+  );
+  transform: rotateZ(45deg);
+  border-radius: 25%;
+  width: 192px;
+  height: 192px;
+
+  position: absolute;
+  right: -50px;
+  top: 260px;
 }
 
 .top__content {
@@ -87,4 +103,14 @@
 .top__content button:active {
   filter: brightness(95%);
   box-shadow: 0px 2px 4px rgba(46, 153, 241, 0.5);
+}
+
+@media (max-width: 1200px) {
+  .top > img {
+    display: none;
+  }
+
+  .square2{
+    display: block;
+  }
 }
